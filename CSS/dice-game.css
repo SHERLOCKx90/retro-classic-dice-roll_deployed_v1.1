@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: darkcyan; */
+    background-attachment: fixed;
+
+
+}
+
+.body1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid; */
+    border-color: aliceblue;
+    /* margin: 10px; */
+    margin-bottom: 0%;
+}
+
+.container {
+    border: 20px double;
+    border-radius: 80px;
+    justify-content: center;
+    /* border-radius: 20px; */
+    /* padding: 11rem 10rem 11rem 10rem; */
+    /* border: 1px solid cyan; */
+    backdrop-filter: blur(1rem);
+    background: linear-gradient(to left top, rgba(93, 20, 209, 0.5), rgba(32, 2, 2, 0.055));
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    width: max-content;
+    padding: 20px;
+    /* border-width: 1rem; */
+}
+
+.frames {
+    border: solid;
+    border-color: black;
+}
+
+section {
+    border: solid;
+    margin: 2px;
+    margin-inline: 20px;
+    margin-block: 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    /* border: solid; */
+    border-color: black;
+    border-radius: 10%;
+    padding: 10px;
+    width: 100px;
+    font-size: inherit;
+    color: aquamarine;
+}
+
+.zoom {
+    border: 20px double;
+    padding: 10px;
+    /* background-color: green; */
+    backdrop-filter: blur(1rem);
+    background: linear-gradient(to left top, rgba(229, 255, 0, 0.884), rgba(229, 255, 0, 0.377));
+    transition: transform .2s;
+    /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.zoom1 {
+    /* padding: 10px; */
+    background-color: green;
+    transition: transform .2s;
+    /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.zoom1:hover {
+    transform: scale(1.1);
+
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom:hover {
+    color: whitesmoke;
+    /* border-color: #e60073; */
+    transform: scale(1.1);
+    font-size: larger;
+    border: 5px dotted wheat;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#abc {
+    border-radius: 100%;
+}
+
+#xyz {
+    border-radius: 100%;
+    margin: 0%;
+}
+
+.frame1 {
+    font-family: 'Press Start 2P', cursive;
+    /* border: 1px solid; */
+    border-color: black;
+    margin: 5px;
+    padding-top: 40%;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    font-size: inherit;
+    width: 150px;
+
+}
+
+.container1 {
+
+
+    padding-block: 2rem;
+    align-content: center;
+}
+
+.container2 {
+    font-size: inherit;
+    padding-block: 2rem;
+    align-content: center;
+}
+
+.game {
+    border-radius: 80px;
+    /* border: 1px solid; */
+    /* border-color: aliceblue;s */
+    height: fit-content;
+    /* width: fit-content; */
+    /* width: fit-content; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 100px;
+    padding: 20px;
+    /* border-radius: 20px; */
+
+}
+
+.game:hover {
+    /* transform: scale(1.1); */
+    color: rgb(255, 208, 91);
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f3c74d, 0 0 40px #e6b000, 0 0 50px #abad0c, 0 0 60px #e6bc00, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f3c74d, 0 0 40px #e6b000, 0 0 50px #abad0c, 0 0 60px #e6bc00, 0 0 70px #e60073;
+    }
+
+    to {
+        box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+
+}
+
+.gamehead {
+    cursor: pointer;
+    border: 20px double;
+    border-radius: 80px;
+    backdrop-filter: blur(1rem);
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.185), rgba(255, 255, 255, 0));
+    margin-top: 40px;
+    margin-inline: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gamehead:hover {
+    border: 20px dotted gold;
+    border-radius: 80px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.footer {
+    border: 20px double;
+    border-radius: 40px;
+    color: white;
+    /* border: 1px solid; */
+    /* border-color: aliceblue; */
+    /* border-radius: 10px; */
+    backdrop-filter: blur(1rem);
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.349), rgba(255, 255, 255, 0));
+    /* margin-inline: 0%; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.footer:hover {
+    color: black;
+}
+
+.gameicon {
+    z-index: 1000;
+    margin: -100px;
+}
+
+.gameicon:hover {
+    transform: scale(1.5);
+}
+
+
+
+/*
+  You can adjust the
+    * rotation (rotateX),
+    * vertical stretch (scaleY),
+    * projection (perspective) and
+    * layer depth (--layer-depth)
+*/
+.title {
+    text-decoration: solid;
+    color: #f1c70b;
+  text-align: center;
+  font-family: 'Coda Caption', sans-serif;
+  font-weight: 800;
+  font-size: calc(20vw / var(--word-total) ); /* Overriden below for fluid typography test */
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+  transform: perspective(300px) scaleY(1.5) rotateX(-40deg);
+  transform-style: preserve-3d; /* Important for establishing a shared 3D space for all the layers */
+  --layer-depth: 0.32em;
+}
+
+
+/* The front layer are yellow words with a thick black stroke outline */
+.title .word {
+  position: relative;
+  display: inline-block;
+  color: yellow;
+  font-size: calc(((var(--line-index) + 1) * 25%) + 50%); /* We skew font-sizes to avoid emphasize on the top, due to perspective rotation */
+  text-shadow: 0.06em 0 black, 0.06em 0.06em black, 0 0.06em black, -0.06em 0.06em black, -0.06em 0 black, -0.06em -0.06em black, 0 -0.06em black, 0.06em -0.06em black;
+  transform-style: preserve-3d; /* Important as above, we need to make sure the pseudos share the same 3D space */
+}
+
+
+/* The back layers are two pseudos, we pull content through via Splitting.js! */
+.title .word::before,
+.title .word::after {
+  content: attr(data-word);
+  position: absolute;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  display: block;
+  pointer-events: none;
+}
+
+/* Red layer immediately behind the yellow, thinner stroke outline */
+.title .word::before {
+  color: red;
+  text-shadow: 0.02em 0 black, 0.02em 0.02em black, 0 0.02em black, -0.02em 0.02em black, -0.02em 0 black, -0.02em -0.02em black, 0 -0.02em black, 0.02em -0.02em black;
+  transform: translateZ(calc(var(--layer-depth) * -0.5));
+}
+
+/* Furthest layer, just simple black lettering with no outline */
+.title .word::after {
+  color: black;
+  text-shadow: none;
+  transform: translateZ(calc(var(--layer-depth) * -1));
+}
+
+
+/* Testing Fluid Typography with CSS Variables – Broke on Safari though? */
+.title {
+  --min-font-size: 64;
+  --max-font-size: 128;
+  font-size: calc(var(--min-font-size) * 1px);
+}
+
+@media screen and (min-width: 320px) {
+  .title {
+    font-size: calc(var(--min-font-size) * 1px + (var(--max-font-size) - var(--min-font-size)) * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .title {
+    font-size: calc(var(--max-font-size) * 1px);
+  }
+}
+
+
