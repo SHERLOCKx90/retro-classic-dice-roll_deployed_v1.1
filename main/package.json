@@ -4,7 +4,7 @@
   "description": "![dice](https://user-images.githubusercontent.com/97678993/209700987-5bfd9e9b-e2f7-44bd-a492-a841b7a73241.png)",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "echo 'No build process required'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
